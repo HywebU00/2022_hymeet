@@ -1,0 +1,47 @@
+.hide {
+  display: none;
+}
+
+.hm-wrapper {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $background;
+  display: flex;
+  flex-direction: column;
+  .hm-content {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    flex: 1 1 auto;
+    @media (max-width: 480px) {
+      display: block;
+      z-index: 6;
+    }
+    >div {
+      border-radius: 20px;
+      @media (max-width: 480px) {
+        border-radius: 0;
+      }
+    }
+    .hm-chartspace {
+      flex: 0 0 316px;
+      margin-right: 1rem;
+      background: $background;
+      box-shadow: -3px -3px 8px #FFFFFF, 3px 3px 8px rgba(0, 0, 0, 0.15);
+      display: none;
+    }
+    .hm-participants {
+      flex: 0 0 316px;
+      margin-left: 1rem;
+      background: $background;
+      box-shadow: -3px -3px 8px #FFFFFF, 3px 3px 8px rgba(0, 0, 0, 0.15);
+      display: none;
+    }
+  }
+  .hm-toolBox {}
+}
+
+.smileys-panel {
+  display: none;
+}

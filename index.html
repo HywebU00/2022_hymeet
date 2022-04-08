@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/css/hm-all.css">
+
+</head>
+
+<body>
+
+  <!-- hm-wrapper 外框 start -->
+  <div class="hm-wrapper">
+    <!-- hm-content 上方內容 start -->
+    <div class="hm-content">
+      <!-- hm-chartspace 聊天室 start -->
+      <div class="hm-chartspace">
+        <!-- chat-header 聊天室標題 start -->
+        <div class="chat-header" role="heading">
+          <span>聊天室</span>
+          <div aria-label="關閉聊天欄" class="" role="button"></div>
+        </div>
+        <!-- chat-header 聊天室標題 end -->
+        <!-- chat-tabs 頁籤 start -->
+        <div class="chat-tabs" aria-label="對話" role="tablist">
+          <div class="tab-title focus" aria-controls="chat-panel" aria-label="聊天" aria-selected="true" role="tab">
+            <span>聊天</span>
+          </div>
+          <div class="tab-title" aria-controls="polls-panel" aria-label="投票" aria-selected="false" role="tab">
+            <span>投票</span>
+          </div>
+        </div>
+        <!-- chat-tabs 頁籤 end -->
+        <!-- chat-panel 輸入區 start -->
+        <div class="chat-panel" aria-labelledby="chat-tab" role="tabpanel">
+          <!-- chat-text 對話區塊 start -->
+          <div class="chat-text" aria-labelledby="chat-header" role="log">
+            <!-- chat-message-group 回覆段落 start -->
+            <!-- remote 對方訊息 -->
+            <div class="chat-message-group remote">
+              <!-- chatmessage-wrapper 一則訊息 start -->
+              <div class="chat-message-wrapper">
+                <div class="chat-message">
+                  <div class="message-content">
+                    <div aria-hidden="true" class="display-name">veela</div>
+                    <div class="user-message">
+                      <span class="sr-only">veela 說：</span> aaaa
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- chatmessage-wrapper 一則訊息 end -->
+              <!-- chatmessage-wrapper 一則訊息 start -->
+              <div class="chatmessage-wrapper">
+                <div class="chat-message">
+                  <div class="message-content">
+                    <div class="user-message">
+                      <span class="sr-only">veela 說：</span>
+                      <span class="smiley" style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😭</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- 最後一個有時間 -->
+                <div class="timestamp">17:46</div>
+              </div>
+              <!-- chatmessage-wrapper 一則訊息 end -->
+            </div>
+            <!-- chat-message-group 回覆段落 end -->
+            <!-- chat-message-group 回覆段落 start -->
+            <!-- local 自己訊息 -->
+            <div class="chat-message-group local">
+              <!-- chatmessage-wrapper 一則訊息 start -->
+              <div class="chat-message-wrapper">
+                <div class="chat-message">
+                  <div class="message-content">
+                    <div aria-hidden="true" class="display-name">aaa</div>
+                    <div class="user-message"><span class="sr-only">您說：</span>fdvdbe </div>
+                  </div>
+                </div>
+                <div class="timestamp">17:48</div>
+              </div>
+              <!-- chatmessage-wrapper 一則訊息 end -->
+            </div>
+            <!-- chat-message-group 回覆段落 end -->
+          </div>
+          <!-- chat-text 對話區塊 end -->
+          <!-- chat-input-container輸入框 start -->
+          <div class="chat-input-container">
+            <div id="chat-input">
+              <div class="smiley-input">
+                <div id="smileysarea">
+                  <div id="smileys">
+                    <div class="smiley-button" role="button" aria-expanded="false" aria-haspopup="smileysContainer" aria-label="表情符號面板">
+
+                    </div>
+                  </div>
+                </div>
+                <!-- show-smileys 打開 -->
+                <div class="hide-smileys smileys-panel">
+                  <div aria-orientation="horizontal" id="smileysContainer" role="listbox">
+                    <div class="smileyContainer" id="smiley1" role="option" tabindex="0">
+                      <span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😃</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley2" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😦</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley3" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😄</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley4" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">👍</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley5" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😛</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley6" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">👋</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley7" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😊</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley8" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">🙂</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley9" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😱</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley10" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😗</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley11" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">👎</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley12" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">🔍</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley13" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">❤️</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley14" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😇</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley15" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😠</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley16" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">👼</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley17" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😭</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley18" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">👏</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley19" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">😉</span></span>
+                    </div>
+                    <div class="smileyContainer" id="smiley20" role="option" tabindex="0"><span class="smiley"><span style="width: 1em; height: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">🍺</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="usrmsg-form">
+                <textarea autocomplete="off" id="usermsg" placeholder="輸入訊息" tabindex="0" class="" style="height: 40px !important;"></textarea>
+              </div>
+              <div class="send-button-container">
+                <div aria-label="chat.sendButton" class="send-button" role="button">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- chat-input-container輸入框 end -->
+        </div>
+        <!-- chat-panel 輸入區 end -->
+      </div>
+      <!-- hm-chartspace 聊天室 end -->
+      <!-- hm-videoSpace 影片區塊 start -->
+      <div class="hm-videoSpace">
+        <div class="hm-status">
+          <!-- info start -->
+          <div class="status-info">
+            <div class="status-title">subject</div>
+            <div class="status-timer">4:12:39</div>
+            <div class="raisedHands">
+              <!-- <span class="hm-icon"><img class="svg" src="src/images/icon/icon-handUp.svg" alt=""></span> 1 -->
+              <span class="hm-icon icon-hand"></span><span class="count">1</span>
+            </div>
+            <!-- active -->
+            <div class="alert">
+              <span class="hm-icon icon-alert"></span>
+            </div>
+          </div>
+          <!-- info start end -->
+        </div>
+        <!-- hm-dominant中央姓名區塊 start -->
+        <div class="hm-dominant" style="background: #C9ECF8;">C</div>
+        <!-- hm-dominantdominant中央姓名區塊 end -->
+      </div>
+      <!-- hm-videoSpace end -->
+      <!-- hm-filmstrip 即時影像 start -->
+      <div class="hm-filmstrip">
+        <!-- filmstrip-toggle 開關 start -->
+        <div class="filmstrip-toggle">
+          <button aria-expanded="true" aria-label="切換幻燈片"></button>
+        </div>
+        <!-- filmstrip-toggle 開關 end -->
+        <!-- filmstrip-close 手機版 關閉鈕 start -->
+        <div class="filmstrip-close">
+          <span class="hm-icon icon-close-b"></span>
+        </div>
+        <!-- filmstrip-close 手機版 關閉鈕 end -->
+        <!-- filmstrip-list 即時影像列表 start -->
+        <div class="filmstrip-list">
+          <!-- filmstrip-local 本地端 start -->
+          <div class="filmstrip-local">
+            <!-- filmstrip-wrapper 人 start -->
+            <div class="filmstrip-wrapper">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <!-- 未舉手時隱藏 -->
+                  <!-- <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div> -->
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container"></div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+          </div>
+          <!-- filmstrip-local 本地端 end -->
+          <!-- filmstrip-remote 對方 start -->
+          <div class="filmstrip-remote">
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 舉手時加上filmstrip-hangup -->
+            <div class="filmstrip-wrapper filmstrip-hangup">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <!-- 未舉手時隱藏 -->
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container"></div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <div class="filmstrip-wrapper">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <!-- 未舉手時隱藏 -->
+                  <!-- <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div> -->
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <span class="hm-icon icon-audio-b"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="avatar-container">
+                  <div class="avatar"></div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 舉手時加上filmstrip-hangup -->
+            <div class="filmstrip-wrapper filmstrip-hangup">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 釘選時加上 active -->
+            <div class="filmstrip-wrapper active">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand active"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar active"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more active"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <!-- <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div> -->
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 釘選時加上 active -->
+            <div class="filmstrip-wrapper active">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <!-- <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div> -->
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 同時舉手與釘選 順序為 先filmstrip-hangup 後active -->
+            <div class="filmstrip-wrapper filmstrip-hangup active">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <!-- <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div> -->
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- 舉手時加上filmstrip-hangup -->
+            <div class="filmstrip-wrapper filmstrip-hangup">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <!-- 未舉手時隱藏 -->
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container"></div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <div class="filmstrip-wrapper">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <!-- 未舉手時隱藏 -->
+                  <!-- <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div> -->
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <span class="hm-icon icon-audio-b"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="avatar-container">
+                  <div class="avatar"></div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 舉手時加上filmstrip-hangup -->
+            <div class="filmstrip-wrapper filmstrip-hangup">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 釘選時加上 active -->
+            <div class="filmstrip-wrapper active">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand active"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar active"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more active"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div>
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <!-- <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div> -->
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 釘選時加上 active -->
+            <div class="filmstrip-wrapper active">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <!-- <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div> -->
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+            <!-- filmstrip-wrapper 人 start -->
+            <!-- 同時舉手與釘選 順序為 先filmstrip-hangup 後active -->
+            <div class="filmstrip-wrapper filmstrip-hangup active">
+              <!-- filmstrip-container 預留線框 start -->
+              <div class="filmstrip-container">
+                <div class="filmstrip-icon">
+                  <div class="filmstrip-icon-hand"><span class="hm-icon icon-hand"></span></div>
+                  <div class="filmstrip-icon-bar"><span class="hm-icon icon-bar"></span></div>
+                  <div class="filmstrip-icon-more"><span class="hm-icon icon-more-w"></span></div>
+                </div>
+                <div class="filmstrip-title">
+                  <!-- 關閉麥克風時icon隱藏 -->
+                  <span class="hm-icon icon-audio-b hide"></span>名字名字名字
+                </div>
+                <!-- avatar-container 頭像 -->
+                <!-- 有影像時隱藏 -->
+                <!-- <div class="filmstrip-avatar">
+                  <div class="avatar">A</div>
+                </div> -->
+                <!-- avatar-container 影像 -->
+                <!-- 沒有影像時隱藏 -->
+                <div class="film-container">
+                  <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="">
+                </div>
+              </div>
+              <!-- filmstrip-container 預留線框 end -->
+            </div>
+            <!-- filmstrip-wrapper 人 end -->
+          </div>
+          <!-- filmstrip-remote 對方 end -->
+        </div>
+        <!-- filmstrip-list 即時影像列表 end -->
+      </div>
+      <!-- hm-filmstrip 即時影像 end -->
+      <!-- hm-participants 參與者 start -->
+      <div class="hm-participants">
+        <div class="participants-header">
+          <span>聊天室</span>
+          <div aria-label="關閉" class="" role="button"></div>
+        </div>
+        <div class="participants-content">
+          <div class="content-title">
+            會議參與者 (2)
+          </div>
+          <button aria-label="邀請他人" class="">
+            <div class="jitsi-icon jitsi-icon-default "></div>
+            <span>邀請他人</span>
+          </button>
+          <div class="content-search">
+            <input class="" placeholder="搜尋參與者" type="text" value="">
+          </div>
+          <div class="content-list">
+            <div class="list-item">
+              <div class="item-avatar">
+              </div>
+              <div class="item-title">
+                <div class="item-name"><span></span></div>
+                <div class="item-indicators">
+                  <div class="icon-videoMuted">
+
+                  </div>
+                  <div class="icon-AudioMuted">
+
+                  </div>
+                </div>
+                <div class="item-actions">
+                  <button aria-label="要求解除靜音 bbb" class="">要求解除靜音</button>
+                  <button aria-label="更多參與者選項" class="">
+                    <div class="jitsi-icon jitsi-icon-default "></div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item-avatar">
+              </div>
+              <div class="item-title">
+                <div class="item-name"><span></span></div>
+                <div class="item-indicators">
+                  <div class="icon-videoMuted">
+
+                  </div>
+                  <div class="icon-AudioMuted">
+
+                  </div>
+                </div>
+                <div class="item-actions">
+                  <button class="" aria-label="要求解除靜音 bbb">要求解除靜音</button>
+                  <button class="" aria-label="更多參與者選項">
+                    <div class="jitsi-icon jitsi-icon-default "></div>
+                  </button>
+                </div>
+                <div class="actions-menu">
+                  <ul>
+                    <li>
+                      <div class="" aria-label="將其他人靜音">
+                        <div class="jitsi-icon jitsi-icon-default"></div>
+                        <span class="">靜音其他人</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="" aria-label="Stop everyone else's video">
+                        <div class="jitsi-icon jitsi-icon-default"></div>
+                        <span class="">停用其他人的攝影機</span>
+                      </div>
+                    </li>
+                    <hr class="menu-hr">
+                    <li>
+                      <div class="kicklink" aria-label="踢出">
+                        <div class="jitsi-icon jitsi-icon-default"></div>
+                        <span class="">踢出</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="" aria-label="發送私人訊息">
+                        <div class="jitsi-icon jitsi-icon-default"></div>
+                        <span class="">傳送私人訊息</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button aria-label="新增討論室" class="jss80  jss106">新增討論室</button>
+        </div>
+        <div class="content-function">
+          <button class="" aria-label="靜音所有人">靜音所有人</button>
+          <div class="jss57">
+            <button class="" aria-label="更多管理選項" id="participants-pane-context-menu">
+              <div class="jitsi-icon jitsi-icon-default "></div>
+            </button>
+            <div class="iactions-menu">
+              <ul>
+                <li>
+                  <div aria-label="停止所有人的視訊" class="" id="participants-pane-context-menu-stop-video">
+                    <div class="jitsi-icon jitsi-icon-default"></div>
+                    <span class="">停止所有人的視訊</span>
+                  </div>
+                </li>
+                <li>
+                  <div aria-label="更多管理控制項" class="" id="participants-pane-open-moderation-control-settings">
+                    <div class="jitsi-icon jitsi-icon-default"></div>
+                    <span class="">更多管理控制項</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hm-participants end -->
+    </div>
+    <!-- hm-content end -->
+    <!-- hm-toolBox 工具箱 start -->
+    <div class="hm-toolBox">
+      <div class="toolBox-toggle">
+        <button aria-expanded="true" aria-label="切換幻燈片">收合</button>
+      </div>
+      <div class="toolBox-button-container">
+        <!-- audio設定 start -->
+        <div class="toolBox-button tool-audio">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <!-- 執行時添加active -->
+            <div class="button-icon">
+              <span class="hm-icon icon-audio"></span>
+              <span class="button-text">取消靜音</span>
+            </div>
+            <!-- 執行時添加active -->
+            <div class="button-open">
+              <span class="hm-icon icon-arrowUp"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+          <!-- audio內容 start -->
+          <div class="tool-audio-content" aria-labelledby="audio-settings-button" role="menu">
+            <div class="tool-audio-menu">
+              <div class="tool-audio-header" role="heading">
+                <div class="header-icon">
+                  <span class="hm-icon icon-audio-h"></span>
+                </div>
+                <div class="header-text">麥克風</div>
+              </div>
+              <ul class="tool-audio-list" aria-labelledby="microphone_settings_header" role="radiogroup">
+                <li aria-labelledby="" role="radio">
+                  <div class="list-default">
+                    <span class="hm-icon icon-check"></span>
+                  </div>
+                  <div class="list-text">系統預設 (AirPods)系統預設 (AirPods)</div>
+                  <!-- span內有內容即顯示顏色 -->
+                  <div class="list-meter">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </li>
+                <li aria-labelledby="" role="radio">
+                  <div class="list-text">AirPods</div>
+                  <!-- span內有內容即顯示顏色 -->
+                  <div class="list-meter">
+                    <span>1</span><span>2</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </li>
+                <li aria-labelledby="" role="radio">
+                  <div class="list-text">麥克風</div>
+                  <!-- span內有內容即顯示顏色 -->
+                  <div class="list-meter">
+                    <span>1</span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tool-audio-menu">
+              <div class="tool-audio-header" role="heading">
+                <div class="header-icon">
+                  <span class="hm-icon"><img class="svg" src="src/images/icon/icon-volume.svg" alt=""></span>
+                </div>
+                <div class="header-text">喇叭</div>
+              </div>
+              <ul class="tool-audio-list" aria-labelledby="microphone_settings_header" role="radiogroup">
+                <li aria-labelledby="" role="radio">
+                  <div class="list-default">
+                    <span class="hm-icon"><img class="svg" src="src/images/icon/icon-check.svg" alt=""></span>
+                  </div>
+                  <div class="list-text">系統預設 (AirPods)</div>
+                  <div class="list-button" role="button">測試</div>
+                </li>
+                <li aria-labelledby="" role="radio">
+                  <div class="list-text">AirPods</div>
+                  <div class="list-button" role="button">測試</div>
+                </li>
+                <li aria-labelledby="" role="radio">
+                  <div class="list-text">MacBook Pro的揚聲器 (Built-in)</div>
+                  <div class="list-button" role="button">測試</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- audio內容 end -->
+        </div>
+        <!-- audio設定 end -->
+        <!-- video設定 start -->
+        <div class="toolBox-button tool-video">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <!-- 執行時添加active -->
+            <div class="button-icon">
+              <span class="hm-icon icon-video"></span>
+              <span class="button-text">開始視訊</span>
+            </div>
+            <!-- 執行時添加active -->
+            <div class="button-open">
+              <span class="hm-icon icon-arrowUp"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+          <!-- video內容 start -->
+          <div class="tool-video-content" aria-labelledby="video-settings-button" role="menu">
+            <div class="video-preview">
+              <div class="video-preview-label">
+                FaceTime HD攝影機（內建） (05ac:8514)
+              </div>
+              <!-- <div class="video-preview-overlay"></div> -->
+              <video autoplay="" class="video-preview-video flipVideoX" id="" playsinline="" src="src/images/pexels-koolshooters-8530646.mp4">
+            </video>
+              <!-- <img src="https://images.unsplash.com/photo-1544168190-79c17527004f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt=""> -->
+            </div>
+          </div>
+          <!-- video內容 end -->
+        </div>
+        <!-- video設定 end -->
+        <!-- 切換螢幕設定 start -->
+        <div class="toolBox-button tool-shareScreen">
+          <!-- 按鈕 start -->
+          <div class="tool-button active">
+            <div class="button-icon">
+              <span class="hm-icon icon-shareScreen"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+        </div>
+        <!-- 切換螢幕設定 end -->
+        <!-- 聊天室設定 start -->
+        <div class="toolBox-button tool-chatSpace">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <div class="button-icon">
+              <span class="hm-icon icon-chatSpace"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+          <span class="badge-round"><span>2</span></span>
+        </div>
+        <!-- 聊天室設定 end -->
+        <!-- 舉手 start -->
+        <div class="toolBox-button tool-handup">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <div class="button-icon">
+              <span class="hm-icon icon-handUp"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+        </div>
+        <!-- 舉手 end -->
+        <!-- 表情 start -->
+        <div class="toolBox-button tool-emoji">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <div class="button-icon">
+              <span class="hm-icon icon-emoji"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+        </div>
+        <!-- 表情 end -->
+        <!-- 參與者 start -->
+        <div class="toolBox-button tool-participants">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <div class="button-icon">
+              <span class="hm-icon icon-participants"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+        </div>
+        <!-- 參與者 end -->
+        <!-- 切換格狀檢視 start -->
+        <div class="toolBox-button tool-grid">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <div class="button-icon">
+              <span class="hm-icon icon-grid"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+        </div>
+        <!-- 切換格狀檢視 end -->
+        <!-- 更多 start -->
+        <div class="toolBox-button tool-more">
+          <!-- 按鈕 start -->
+          <div class="tool-button" aria-label="切換更多動作功能表">
+            <div class="button-icon">
+              <span class="hm-icon icon-more"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+          <!-- 更多選單 start -->
+          <div class="tool-menu-content" aria-label="更多動作功能表">
+            <ul class="adv-menu">
+              <li class="adv-menu-item" aria-label="編輯您的簡介" role="menuitem">
+                <span class="menu-avatar" style="background: rgb(115, 52, 140);"></span>
+                <span class="menu-item">參與者暱稱（變數）</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-invite"></span>
+                </span>
+                <span class="menu-item">邀請人員</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-effect"></span>
+                </span>
+                <span class="menu-item">效能設定</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-zoom"></span>
+                </span>
+                <span class="menu-item">放大全螢幕</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-safety"></span>
+                </span>
+                <span class="menu-item">安全性選項</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-record"></span>
+                </span>
+                <span class="menu-item">啟動錄影作業</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-stream"></span>
+                </span>
+                <span class="menu-item">啟動直播串流</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-audio-b"></span>
+                </span>
+                <span class="menu-item">靜音所有人</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-video-b"></span>
+                </span>
+                <span class="menu-item">停用所有人的攝影機</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-share"></span>
+                </span>
+                <span class="menu-item">分享影片</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-share"></span>
+                </span>
+                <span class="menu-item">分享音訊</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-bg"></span>
+                </span>
+                <span class="menu-item">選擇背景</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-setting"></span>
+                </span>
+                <span class="menu-item">設定</span>
+              </li>
+              <li class="adv-menu-item" role="menuitem">
+                <span class="menu-icon">
+                <span class="hm-icon icon-info"></span>
+                </span>
+                <span class="menu-item">說明</span>
+              </li>
+            </ul>
+          </div>
+          <!-- 更多選單 end -->
+        </div>
+        <!-- 更多 end -->
+        <!-- 離開通話 start -->
+        <div class="toolBox-button tool-hangup" aria-label="離開通話" role="button">
+          <!-- 按鈕 start -->
+          <div class="tool-button">
+            <div class="button-icon hangup">
+              <span class="hm-icon icon-close"></span>
+            </div>
+          </div>
+          <!-- 按鈕 end -->
+        </div>
+        <!-- 離開通話 end -->
+      </div>
+
+    </div>
+    <!-- hm-toolBox end -->
+  </div>
+
+  <!-- hm-wrapper end -->
+  <script src="src/js/jquery-3.5.1.min.js"></script>
+  <script src='src/js/test.js'></script>
+</body>
+
+</html>

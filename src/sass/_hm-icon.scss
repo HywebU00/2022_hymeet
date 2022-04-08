@@ -1,0 +1,65 @@
+.hm-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+$fileTypePic: alert,
+arrowDown,
+arrowLeft,
+arrowRight,
+arrowUp,
+audio,
+audio-b,
+audio-h,
+audioClose,
+bar,
+chatSpace,
+check,
+close,
+close-b,
+copy,
+grid,
+hand,
+handDown,
+handUp,
+link,
+more,
+more-w,
+participants,
+send,
+setting,
+shareScreen,
+emoji,
+video,
+video-b,
+videoClose,
+volume,
+invite,
+effect,
+zoom,
+safety,
+record,
+stream,
+share,
+bg,
+info,
+other;
+@each $fileTypePic in $fileTypePic {
+  .icon-#{$fileTypePic} {
+    background: url(../images/icon/icon-#{$fileTypePic}.svg) no-repeat center center;
+  }
+}
+
+.button-icon.active .icon-audio {
+  background: url(../images/icon/icon-audioClose.svg) no-repeat center center;
+}
+
+.button-icon.active .icon-video {
+  background: url(../images/icon/icon-videoClose.svg) no-repeat center center;
+}
+
+.button-open.active .icon-arrowUp {
+  background: url(../images/icon/icon-arrowDown.svg) no-repeat center center;
+}
