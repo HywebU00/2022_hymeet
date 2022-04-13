@@ -133,4 +133,18 @@
       font-size: 60px;
     }
   }
+  .largeVideoElementsContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    .large-video-background {
+      object-fit: cover;
+    }
+  }
 }

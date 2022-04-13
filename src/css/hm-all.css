@@ -1054,6 +1054,19 @@ select {
         width: 120px;
         height: 120px;
         font-size: 60px; } }
+  .hm-videoSpace .largeVideoElementsContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3; }
+    .hm-videoSpace .largeVideoElementsContainer .large-video-background {
+      -o-object-fit: cover;
+         object-fit: cover; }
 
 .hm-filmstrip {
   max-height: calc(100vh - 94px - 16px - 8px);
